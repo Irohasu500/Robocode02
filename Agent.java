@@ -134,235 +134,235 @@ public class Agent{
 
     //未
 
-    /*
-    10桁のint型の整数aabbccdde
-    aa = 自戦車のx座標
-    bb = 自戦車のy座標
-    cc = 敵戦車のx座標
-    dd = 敵戦車のy座標
-    e  = 敵戦車をスキャンしたかどうか(スキャンしたときは0できなかったときは1)
-    */
+//     /*
+//     10桁のint型の整数aabbccdde
+//     aa = 自戦車のx座標
+//     bb = 自戦車のy座標
+//     cc = 敵戦車のx座標
+//     dd = 敵戦車のy座標
+//     e  = 敵戦車をスキャンしたかどうか(スキャンしたときは0できなかったときは1)
+//     */
 
-    public String correspondence_a(int s){
-        String now_action;
+//     public String correspondence_a(int s){
+//         String now_action;
 
-        /*ここから*/
+//         /*ここから*/
 
-        now_action = "asda";
+//         now_action = "asda";
 
-        String s1 = "scan:";
-        int r = 0;
+//         String s1 = "scan:";
+//         int r = 0;
 
-        r = s % 10;
-        s = s / 10;
+//         r = s % 10;
+//         s = s / 10;
 
-        if(r == 0){                 //敵をスキャンしたかどうかの場合分け
-            s1 = s1 + "on ";
-        }else if(r == 1){           //敵をスキャンしたかどうかの場合分け
-            s1 = s1 + "off ";
-        }else{
-            s1 = s1 + "error ";
-        }
+//         if(r == 0){                 //敵をスキャンしたかどうかの場合分け
+//             s1 = s1 + "on ";
+//         }else if(r == 1){           //敵をスキャンしたかどうかの場合分け
+//             s1 = s1 + "off ";
+//         }else{
+//             s1 = s1 + "error ";
+//         }
 
-        s1 = s1 + "enemy:y=";       //敵のy座標
-        r = s % 100;
-        s = s / 100;
-        s1 = s1 + r;
+//         s1 = s1 + "enemy:y=";       //敵のy座標
+//         r = s % 100;
+//         s = s / 100;
+//         s1 = s1 + r;
         
-        s1 = s1 + " x=";            //敵のx座標
-        r = s % 100;
-        s = s / 100;
-        s1 = s1 + r;
+//         s1 = s1 + " x=";            //敵のx座標
+//         r = s % 100;
+//         s = s / 100;
+//         s1 = s1 + r;
 
-        s1 = s1 + " me:y=";         //自機のy座標
-        r = s % 100;
-        s = s / 100;
-        s1 = s1 + r;
+//         s1 = s1 + " me:y=";         //自機のy座標
+//         r = s % 100;
+//         s = s / 100;
+//         s1 = s1 + r;
 
-        s1 = s1 + " x=";            //自機のx座標
-        r = s % 100;
-        s = s / 100;
-        s1 = s1 + r;
+//         s1 = s1 + " x=";            //自機のx座標
+//         r = s % 100;
+//         s = s / 100;
+//         s1 = s1 + r;
 
-        return s1;
-        /*
-        出力例)　scan:on enemy:y=12 x=8 me:y=10 x=16
-        */
+//         return s1;
+//         /*
+//         出力例)　scan:on enemy:y=12 x=8 me:y=10 x=16
+//         */
         
-        /*ここまで*/
+//         /*ここまで*/
         
-        return now_action;
-    }
+//         return now_action;
+//     }
 
-    /*
-        int型の状態を表すsを格納したとき、
-        文字列に直して返す関数。
-        * 文字列は,(カンマ)で区切る
+//     /*
+//         int型の状態を表すsを格納したとき、
+//         文字列に直して返す関数。
+//         * 文字列は,(カンマ)で区切る
 
-    */
-    /*
-    10桁のint型の整数aabbccddef
-    aa = 自戦車のx座標
-    bb = 自戦車のy座標
-    cc = 敵戦車のx座標
-    dd = 敵戦車のy座標
-    e  = 自戦車の体力(低 = 0 中 = 1 高 = 2)
-    f  = 敵戦車をスキャンしたかどうか(スキャンしたときは0できなかったときは1)
-    */
-    public String correspondence_b(int s){
-        String now_state;
+//     */
+//     /*
+//     10桁のint型の整数aabbccddef
+//     aa = 自戦車のx座標
+//     bb = 自戦車のy座標
+//     cc = 敵戦車のx座標
+//     dd = 敵戦車のy座標
+//     e  = 自戦車の体力(低 = 0 中 = 1 高 = 2)
+//     f  = 敵戦車をスキャンしたかどうか(スキャンしたときは0できなかったときは1)
+//     */
+//     public String correspondence_b(int s){
+//         String now_state;
 
-        /*ここから*/
+//         /*ここから*/
 
-        now_state = "asda";
+//         now_state = "asda";
 
-        String s2 = "scan:";
-        int r = 0;
+//         String s2 = "scan:";
+//         int r = 0;
 
-        r = s % 10;
-        s = s / 10;
-        if(r == 0){                 //敵をスキャンしたかどうかの場合分け
-            s2 = s2 + "on ";
-        }else if(r == 1){           //敵をスキャンしたかどうかの場合分け
-            s2 = s2 + "off ";
-        }else{
-            s2 = s2 + "error ";
-        }
+//         r = s % 10;
+//         s = s / 10;
+//         if(r == 0){                 //敵をスキャンしたかどうかの場合分け
+//             s2 = s2 + "on ";
+//         }else if(r == 1){           //敵をスキャンしたかどうかの場合分け
+//             s2 = s2 + "off ";
+//         }else{
+//             s2 = s2 + "error ";
+//         }
 
-        s2 = s2 + "hp:";
-        r = s % 10;
-        s = s / 10;
-        if(r == 0){                 //自機のhpが低い
-            s2 = s2 + "row ";
-        }else if(r == 1){           //自機のhpが中
-            s2 = s2 + "middle ";
-        }else if(r== 2){            //自機のhpが高い
-            s2 = s2 + "high ";
-        }else{
-            s2 = s2 + "error ";
-        }
+//         s2 = s2 + "hp:";
+//         r = s % 10;
+//         s = s / 10;
+//         if(r == 0){                 //自機のhpが低い
+//             s2 = s2 + "row ";
+//         }else if(r == 1){           //自機のhpが中
+//             s2 = s2 + "middle ";
+//         }else if(r== 2){            //自機のhpが高い
+//             s2 = s2 + "high ";
+//         }else{
+//             s2 = s2 + "error ";
+//         }
 
-        s2 = s2 + "enemy:y=";       //敵のy座標
-        r = s % 100;
-        s = s / 100;
-        s2 = s2 + r;
+//         s2 = s2 + "enemy:y=";       //敵のy座標
+//         r = s % 100;
+//         s = s / 100;
+//         s2 = s2 + r;
         
-        s2 = s2 + " x=";            //敵のx座標
-        r = s % 100;
-        s = s / 100;
-        s2 = s2 + r;
+//         s2 = s2 + " x=";            //敵のx座標
+//         r = s % 100;
+//         s = s / 100;
+//         s2 = s2 + r;
 
-        s2 = s2 + " me:y=";         //自機のy座標
-        r = s % 100;
-        s = s / 100;
-        s2 = s2 + r;
+//         s2 = s2 + " me:y=";         //自機のy座標
+//         r = s % 100;
+//         s = s / 100;
+//         s2 = s2 + r;
 
-        s2 = s2 + " x=";            //自機のx座標
-        r = s % 100;
-        s = s / 100;
-        s2 = s2 + r;
+//         s2 = s2 + " x=";            //自機のx座標
+//         r = s % 100;
+//         s = s / 100;
+//         s2 = s2 + r;
 
-        return s2;
-        /*
-        出力例)　scan:on hp:high enemy:y=12 x=8 me:y=10 x=16
-        */
+//         return s2;
+//         /*
+//         出力例)　scan:on hp:high enemy:y=12 x=8 me:y=10 x=16
+//         */
         
-        /*ここまで*/
+//         /*ここまで*/
         
-        return now_state;
-    }
+//         return now_state;
+//     }
 
 
-    /*
-        int型の状態を表すsを格納したとき、
-        文字列に直して返す関数。
-        * 文字列は,(カンマ)で区切る
+//     /*
+//         int型の状態を表すsを格納したとき、
+//         文字列に直して返す関数。
+//         * 文字列は,(カンマ)で区切る
 
-    */
+//     */
 
-    /*
-    10桁のint型の整数aabbccddef
-    aa = 自戦車のx座標
-    bb = 自戦車のy座標
-    cc = 敵戦車のx座標
-    dd = 敵戦車のy座標
-    e  = 自機の速度(遅 = 0 中 = 1 速 = 2)
-    f  = 奇数(f=1,3)ならスキャン失敗,偶数(f=2,6)なら成功
-        それぞれで小さいほう(f=1,2)なら敵の弾がヒット,大きい方(f=3,6)ならヒットしなかった
-    */
+//     /*
+//     10桁のint型の整数aabbccddef
+//     aa = 自戦車のx座標
+//     bb = 自戦車のy座標
+//     cc = 敵戦車のx座標
+//     dd = 敵戦車のy座標
+//     e  = 自機の速度(遅 = 0 中 = 1 速 = 2)
+//     f  = 奇数(f=1,3)ならスキャン失敗,偶数(f=2,6)なら成功
+//         それぞれで小さいほう(f=1,2)なら敵の弾がヒット,大きい方(f=3,6)ならヒットしなかった
+//     */
 
-    public String correspondence_c(int s){
-        String now_action;
+//     public String correspondence_c(int s){
+//         String now_action;
 
-        /*ここから*/
+//         /*ここから*/
 
-        now_action = "asda";
+//         now_action = "asda";
 
-        String s3 = "scan:";
-        int r = 0;
+//         String s3 = "scan:";
+//         int r = 0;
 
-        r = s % 10;
-        s = s / 10;
-        if(r % 2 == 0){             //敵をスキャンしたかどうかの場合分け(偶数はスキャン成功)
-            s3 = s3 + "on ";
-            r = r / 2;
-        }else if(r % 2 == 1){       //敵をスキャンしたかどうかの場合分け(奇数はスキャン失敗)
-            s3 = s3 + "off ";
-        }else{                      //それ以外ならエラー
-            s3 = s3 + "error ";
-        }
+//         r = s % 10;
+//         s = s / 10;
+//         if(r % 2 == 0){             //敵をスキャンしたかどうかの場合分け(偶数はスキャン成功)
+//             s3 = s3 + "on ";
+//             r = r / 2;
+//         }else if(r % 2 == 1){       //敵をスキャンしたかどうかの場合分け(奇数はスキャン失敗)
+//             s3 = s3 + "off ";
+//         }else{                      //それ以外ならエラー
+//             s3 = s3 + "error ";
+//         }
 
-        s3 = s3 + "hit:";
-        if(r == 1){                 //敵の弾が当たった
-            s3 = s3 + "on ";
-        }else if(r == 3){           //敵の弾が当たらなかった
-            s3 = s3 + "off ";
-        }else{                      //それ以外ならエラー
-            s3 = s3 + "error ";
-        }
+//         s3 = s3 + "hit:";
+//         if(r == 1){                 //敵の弾が当たった
+//             s3 = s3 + "on ";
+//         }else if(r == 3){           //敵の弾が当たらなかった
+//             s3 = s3 + "off ";
+//         }else{                      //それ以外ならエラー
+//             s3 = s3 + "error ";
+//         }
 
-        s3 = s3 + "speed:";
-        r = s % 10;
-        s = s / 10;
-        if(r == 0){
-            s3 = s3 + "slow ";      //自機の速度が遅い
-        }else if(r == 1){
-            s3 = s3 + "middle ";    //自機の速度が中
-        }else if(r ==2){
-            s3 = s3 + "fast ";      //時機の速度が速い
-        }else{
-            s3 = s3 + "error ";
-        }
+//         s3 = s3 + "speed:";
+//         r = s % 10;
+//         s = s / 10;
+//         if(r == 0){
+//             s3 = s3 + "slow ";      //自機の速度が遅い
+//         }else if(r == 1){
+//             s3 = s3 + "middle ";    //自機の速度が中
+//         }else if(r ==2){
+//             s3 = s3 + "fast ";      //時機の速度が速い
+//         }else{
+//             s3 = s3 + "error ";
+//         }
 
-        s3 = s3 + "enemy:y=";       //敵のy座標
-        r = s % 100;
-        s = s / 100;
-        s3 = s3 + r;
+//         s3 = s3 + "enemy:y=";       //敵のy座標
+//         r = s % 100;
+//         s = s / 100;
+//         s3 = s3 + r;
         
-        s3 = s3 + " x=";            //敵のx座標
-        r = s % 100;
-        s = s / 100;
-        s3 = s3 + r;
+//         s3 = s3 + " x=";            //敵のx座標
+//         r = s % 100;
+//         s = s / 100;
+//         s3 = s3 + r;
 
-        s3 = s3 + " me:y=";         //自機のy座標
-        r = s % 100;
-        s = s / 100;
-        s3 = s3 + r;
+//         s3 = s3 + " me:y=";         //自機のy座標
+//         r = s % 100;
+//         s = s / 100;
+//         s3 = s3 + r;
 
-        s3 = s3 + " x=";            //自機のx座標
-        r = s % 100;
-        s = s / 100;
-        s3 = s3 + r;
+//         s3 = s3 + " x=";            //自機のx座標
+//         r = s % 100;
+//         s = s / 100;
+//         s3 = s3 + r;
 
-        return s3;
-        /*
-        出力例)　scan:on hit:on speed:middle enemy:y=12 x=8 me:y=10 x=16
-        */
+//         return s3;
+//         /*
+//         出力例)　scan:on hit:on speed:middle enemy:y=12 x=8 me:y=10 x=16
+//         */
         
-        /*ここまで*/
+//         /*ここまで*/
         
-        return now_action;
-    }
+//         return now_action;
+//     }
 
     //=====================================================================================
 
